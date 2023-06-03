@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>App</title>
+  </head>
+  <body>
+    <div id="wrapper">
+        <div><label>Danh sách mèo hiện có:</label></div>
+        <ul>
+           {{#each cats }}
+             <li>
+                {{name}}
+             </li>
+           {{/each}}
+        </ul>
+    </div>
+  </body>
+</html>

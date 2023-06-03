@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{{ packer_head }}}
+    <title>{{ meta_title }}</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container">
+          <div class="nji_owner_cats">
+              <div class="nji_form">
+                  <h3>Tạo người sở hữu mèo</h3>
+                  <form id="frmCreateOwner" method="POST" action="/owner">
+                      <div class="nji_field">
+                          <label for="txtFirstName">
+                              Tên
+                          </label>
+                          <input id="txtFirstName" type="text" name="firstName" class="form-control" />
+                      </div>
+                      <div class="nji_field">
+                          <label for="txtLastName">
+                              Họ
+                          </label>
+                          <input id="txtLastName" type="text" name="lastName" class="form-control" />
+                      </div>
+                      <div class="nji_field">
+                          <label for="txtAddress">
+                              Địa chỉ
+                          </label>
+                          <input id="txtAddress" type="text" name="address" class="form-control" />
+                      </div>
+                      <div class="nji_field">
+                          <label for="txtPhone">
+                              SĐT
+                          </label>
+                          <input id="txtPhone" type="tel" name="phone" class="form-control" />
+                      </div>
+                      <div class="nji_field">
+                          <button type="submit" class="btn btn-primary btnCreateOwner">Thực hiện</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+  </body>
+  {{{ packer_foot }}}
+</html>
